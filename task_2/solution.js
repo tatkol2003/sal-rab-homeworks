@@ -7,29 +7,15 @@ function calcShipping(sum, min, shipping) {
 
     let shippingSum; // создайте переменную shippingSum
 
-    //if (productsSum == 0) {// если productsSum равно 0,
-    //    shippingSum = 0; // то shippingSum присвоить значение 0
-    //}
-
-    //if (productsSum >= freeShippingMinSum) {// если productsSum Больше или равна freeShippingMinSum,
-    //    shippingSum = 0;// то shippingSum присвоить значение 0
-    //}
-    
+    // если productsSum равно 0,
+    // то shippingSum присвоить значение 0
+    // если productsSum Больше или равна freeShippingMinSum,
+    // то shippingSum присвоить значение 0
+        
     if (productsSum == 0 || productsSum >= freeShippingMinSum) {
         shippingSum = 0;
-      }
-
-
-// Ваш комментарий   (ниже) по строке не удалось понять.
-// Напишите, пожалуйста, пример!
-// В третьем условии используется логическое ИЛИ, 
-// которое будет переприсваивать значение, это действие будет приводить к ошибкам. 
-// Правильней было использовать логическое И, а ещё лучше использовать просто else. 
-// То есть присвоить либо одно значение, либо другое (if / else). 
-// Из-за этой ошибки отправляю задание на доработку. 
-// Так как из-за этой ошибки вычисления выполняются неверно.
-
-      if (productsSum > 0 || productsSum < freeShippingMinSum) {// если productsSum больше 0 и меньше freeShippingMinSum,
+    }  else (productsSum > 0 && productsSum < freeShippingMinSum)
+    { // если productsSum больше 0 и меньше freeShippingMinSum,
         shippingSum = shippingPrice; // то shippingSum присвоить значение shippingPrice
     } 
 
